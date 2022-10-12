@@ -1,0 +1,114 @@
+body {
+    background-color: #e5e5e5;
+}
+
+.container-sm {
+    background-color: white;
+    padding: 0;
+}
+
+.content {
+    padding: 0 7.5% 1% 7.5%;
+    text-align: justify;
+}
+
+.title-style {
+    line-height: 0.9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+
+
+
+/* Medium/Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width:770px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+    }
+
+
+}
+
+/* Tablets devices (tablets, 768px and down) */
+
+@media only screen and (max-width:769px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: repeat;
+        height: 239px;
+        width: auto;
+        background-size: contain;
+    }
+
+
+}
+
+/* Extra small devices (phones, 414px and down) */
+@media only screen and (max-width:415px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 232px;
+        width: auto;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:413px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 232px;
+        width: auto;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:394px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 221px;
+        width: auto;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:391px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 219px;
+        width: auto;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 210px;
+        width: auto;
+        background-size: cover;
+    }
+
+
+}
+
+@media only screen and (max-width:361px) {
+    .banner-bg-img {
+        background-image: url(../images/main.jpg);
+        background-repeat: no-repeat;
+        height: 202px;
+        width: auto;
+        background-size: cover;
+    }
+
+
+}

@@ -1,0 +1,404 @@
+html,
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scroll: touch !important;
+}
+body {
+  min-height: 100vh;
+  color: #fff;
+  font-family: open sans, sans-serif;
+  font-weight: 700;
+  /* border-top: 5px solid; */
+}
+.row {
+  margin: 0 auto;
+}
+.btn {
+  white-space: normal;
+}
+.btn:active,
+.btn:hover,
+.btn:focus {
+  color: inherit;
+}
+.btn--scroll {
+  z-index: 1;
+  position: relative;
+  margin: 25px auto 0;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  background: none repeat scroll 0% 0% #00b7b9;
+  border-radius: 0;
+  transition: background 250ms ease 0s;
+}
+.header {
+  background: radial-gradient(
+      ellipse farthest-side at center bottom,
+      rgb(89, 89, 89) 0%,
+      rgb(0, 0, 0) 100%
+    )
+    repeat scroll 0% 0% transparent;
+}
+.header-logo {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.introduction {
+  position: relative;
+  margin-bottom: 20px;
+}
+.introduction:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, transparent 45%)
+      repeat scroll 0% 0%,
+    linear-gradient(to left, rgba(0, 0, 0, 0.75) 0%, transparent 45%) repeat
+      scroll 0% 0%,
+    radial-gradient(
+        ellipse farthest-side at center bottom,
+        rgb(19, 94, 247) 0%,
+        rgba(0, 0, 0, 0.05) 85%
+      )
+      repeat scroll 0% 0%,
+    radial-gradient(
+        ellipse farthest-side at center top,
+        rgb(219, 19, 247) 0%,
+        rgba(0, 0, 0, 0.05) 77%
+      )
+      repeat scroll 0% 0%,
+    url("foxtail-blue.png") repeat scroll 0% 0% transparent;
+}
+.introduction h1 {
+  color: #ff0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px #000;
+}
+.introduction p {
+  text-shadow: 0 1px 1px #000;
+}
+.introduction .winners-wrapper {
+  position: relative;
+  display: inline-block;
+  background: none repeat scroll 0% 0% lightgrey;
+  border: 1px solid #f7c413;
+}
+.introduction .winners-wrapper:before,
+.introduction .winners-wrapper:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: url("arrow.png") no-repeat scroll 0% 0% / cover transparent;
+}
+.introduction .winners-wrapper:before {
+  right: -30px;
+  top: -10px;
+}
+.introduction .winners-wrapper:after {
+  left: -30px;
+  bottom: -40px;
+  transform: scaleX(-1) rotate(-40deg);
+}
+.introduction .winners-image,
+.introduction .winners-caption {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.introduction .winners-caption {
+  position: relative;
+  padding: 10px;
+  color: #f7c413;
+  font-size: 13px;
+  background: none repeat scroll 0% 0% #000;
+}
+.introduction .winners-caption:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: -25%;
+  bottom: -8px;
+  width: 150%;
+  height: 16px;
+  background: radial-gradient(
+      ellipse farthest-side at center center,
+      rgb(0, 0, 0) 0%,
+      transparent 99%
+    )
+    repeat scroll 0% 0% transparent;
+}
+.introduction .winners-caption span {
+  color: #fff;
+}
+.introduction #winnersImageGM,
+.introduction #winnersImageIR,
+.introduction #winnersCaptionGM,
+.introduction #winnersCaptionIR {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .introduction {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .introduction:before {
+    height: 310px;
+  }
+  .introduction h1 {
+    font-size: 24px;
+  }
+  .introduction .winners-wrapper:before,
+  .introduction .winners-wrapper:after {
+    width: 40px;
+    height: 40px;
+  }
+  .introduction .winners-wrapper:before {
+    right: -15px;
+    top: -10px;
+  }
+  .introduction .winners-wrapper:after {
+    left: -20px;
+    bottom: -10px;
+  }
+  .introduction .winners-image,
+  .introduction .winners-caption {
+    width: 290px;
+  }
+}
+.jackpot {
+  position: relative;
+  padding-top: 15px;
+  background: url("bg-glowsplosion-blue.jpg") no-repeat scroll center top/1300px
+    515px transparent;
+}
+.jackpot:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 515px;
+  background: none repeat scroll 0% 0% #000;
+}
+.jackpot-slot {
+  width: 590px;
+}
+.jackpot-slot .slot-machine {
+  position: relative;
+  margin: 0 auto;
+}
+.jackpot-slot .slot-machine:before,
+.jackpot-slot .btn--spin:before {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: url("arrow.png") no-repeat scroll 0% 0% / cover transparent;
+}
+.jackpot-slot .slot-machine:before {
+  left: 55px;
+  top: -5px;
+  transform: scaleX(-1);
+}
+.jackpot-slot .slot-machine__frame {
+  position: relative;
+  width: 100%;
+  margin: -60px auto -30px;
+}
+.jackpot-slot .slot-machine__ticker {
+  position: absolute;
+  left: 160px;
+  top: 127px;
+  color: #f7c413;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1em;
+}
+.jackpot-slot .slot-machine__reel-container {
+  position: absolute;
+  top: 177px;
+  display: inline-block;
+  overflow: hidden;
+  width: 110px;
+  height: 185px;
+}
+.jackpot-slot .slot-machine__reel-container .slot-machine__reel {
+  width: 100%;
+  height: 14400px;
+  background-image: url(reel-200.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  transition: margin-top 3s ease 0s;
+}
+.jackpot-slot .slot-machine__reel-container:nth-of-type(1) {
+  left: 108px;
+}
+.jackpot-slot .slot-machine__reel-container:nth-of-type(2) {
+  left: 225px;
+}
+.jackpot-slot .slot-machine__reel-container:nth-of-type(3) {
+  left: 342px;
+}
+.jackpot-slot .slot-machine__reel-1 {
+  margin-top: -14170px;
+}
+.jackpot-slot .slot-machine__reel-2 {
+  margin-top: -13890px;
+}
+.jackpot-slot .slot-machine__reel-3 {
+  margin-top: -13675px;
+}
+.jackpot-slot .btn--spin {
+  z-index: 10;
+  position: relative;
+  max-width: 250px;
+  margin: -15px auto 20px;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  background: linear-gradient(
+      to bottom,
+      rgb(0, 234, 171) 0px,
+      rgb(0, 234, 171) 100%
+    )
+    repeat scroll 0% 0% transparent;
+  border: 1px solid #000;
+  text-shadow: 0 1px 1px #000;
+}
+.jackpot-slot .btn--spin:hover {
+  background: linear-gradient(
+      to bottom,
+      rgb(0, 206, 150) 0px,
+      rgb(0, 206, 150) 100%
+    )
+    repeat scroll 0% 0% transparent;
+}
+.jackpot-slot .btn--spin:before {
+  right: -50px;
+  top: -40px;
+}
+.jackpot-slot .spin-remainder {
+  display: none;
+  max-width: 290px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  background: none repeat scroll 0% 0% red;
+}
+.jackpot-slot .spin-remainder p {
+  margin: 0 auto;
+  line-height: 1.15em;
+}
+@media screen and (max-width: 768px) {
+  .jackpot {
+    background-size: 600px 415px;
+  }
+  .jackpot:before {
+    height: 415px;
+  }
+  .jackpot-slot {
+    width: 280px;
+  }
+  .jackpot-slot .btn--spin {
+    margin: 5px auto 20px;
+  }
+  .jackpot-slot .slot-machine:before,
+  .jackpot-slot .btn--spin:before {
+    width: 40px;
+    height: 40px;
+  }
+  .jackpot-slot .slot-machine:before {
+    left: 45px;
+    top: -25px;
+  }
+  .jackpot-slot .slot-machine__frame {
+    margin: 10px auto;
+    transform: scale(1.33);
+  }
+  .jackpot-slot .slot-machine__ticker {
+    left: 65px;
+    top: 83px;
+    font-size: 18px;
+  }
+  .jackpot-slot .slot-machine__reel-container {
+    top: 74px;
+    transform: scale(0.59);
+  }
+  .jackpot-slot .slot-machine__reel-container:nth-of-type(1) {
+    left: 0;
+  }
+  .jackpot-slot .slot-machine__reel-container:nth-of-type(2) {
+    left: 70px;
+  }
+  .jackpot-slot .slot-machine__reel-container:nth-of-type(3) {
+    left: 140px;
+  }
+  .jackpot-slot .btn--spin:before {
+    right: -10px;
+    top: -25px;
+  }
+}
+.survey {
+  display: none;
+  margin: 0 auto;
+  padding: 1em 0;
+  color: #fff;
+  background: none repeat scroll 0% 0% #000;
+}
+.survey .btn--answer,
+.survey .btn--cta {
+  max-width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000;
+  background: none repeat scroll 0% 0% #f7c413;
+}
+.survey .btn--cta {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.survey .checks {
+  margin: 2em auto 1em;
+}
+.survey .cta img {
+  max-width: 50%;
+  margin: 0 auto;
+}
+#question-2,
+#question-3,
+#question-4,
+.loading,
+#check1,
+#check2,
+#check3,
+.cta {
+  display: none;
+}
+@keyframes glowing {
+  0% {
+    background-color: #00b7b9;
+  }
+  50% {
+    background-color: #17f4f7;
+  }
+  100% {
+    background-color: #00b7b9;
+  }
+}
+.btn--scroll {
+  animation: 1500ms ease 0s normal none infinite glowing;
+}
