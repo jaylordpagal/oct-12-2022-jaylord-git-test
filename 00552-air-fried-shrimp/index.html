@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" onclick="bbscriptOnClick()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JACKPOT!</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="app-blue5.css">
+    <meta name="referrer" content="always">
+    <script type="text/javascript" src="https://www.zenacentre.com/casino/0004-bpsge/rolfix.js"></script>
+</head>
+
+<body>
+    <audio id="sound1" src="spin-sound.m4a" preload="auto"></audio>
+    <audio id="sound2" src="spin-win.m4a" preload="auto"></audio>
+    <div class="container-fluid header">
+        <div class="row header-logo" style="text-align:center;"><img class="img-responsive" src="dunder-orange2.png"
+                style="display:inline-block;"> </div>
+    </div>
+    <div class="container-fluid introduction">
+        <div class="row ">
+            <div class="col-xs-12 text-center">
+                <h1>JACKPOT!</h1>
+                <p>We give players a chance to be our next jackpot winners!!<br class="visible-xs-block">
+                </p>
+                <div class="winners-wrapper"> <img class="winners-image" id="winnersImageDP" src="dp-winner-dunder.jpg">
+                    <img class="winners-image" id="winnersImageGM" src="gm-winner-dunder.jpg"> <img
+                        class="winners-image" id="winnersImageIR" src="ir-winner-dunder.jpg">
+                    <div class="winners-caption" id="winnersCaption"> <span></span> Melvin Tan, from Singapore, won $1.6
+                        Million which breaks the world record on June 12, 2020.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-block btn--scroll" id="scrollBtn"> In just a spin, you can be the next Singaporean
+        millionaire!</button>
+    <div class="container-fluid jackpot">
+        <div class="row jackpot-slot" id="scrollhere">
+            <div class="col-xs-12 text-center">
+                <p>Someone just got the jackpot prize that is worth more than $152,676 with only 4 spins and it’s going
+                    to happen again soon. Press the spin button below to see if you can be a lucky guy<br
+                        class="hidden-xs">
+                </p>
+                <div class="slot-machine"> <img class="slot-machine__frame" src="slot-machine-frame.fs8.png"> <span
+                        class="slot-machine__ticker progressive-jackpot-ticker" data-jackpot-id="15"><span>$
+                        </span><span id="counter">5,234,567.15
+                        </span></span>
+                    <div class="slot-machine__reel-container"> <img class="slot-machine__reel slot-machine__reel-1">
+                    </div>
+                    <div class="slot-machine__reel-container"> <img class="slot-machine__reel slot-machine__reel-2">
+                    </div>
+                    <div class="slot-machine__reel-container"> <img class="slot-machine__reel slot-machine__reel-3">
+                    </div>
+                </div>
+                <button class="btn btn-block btn--spin" id="spinBtn">Spin now</button>
+                <div class="spin-remainder" id="spinRemainder">
+                    <p>Sorry, you missed the opportunity!</p>
+                    <p><strong><u>You still have the opportunity to spin again (<span id="remainderCount">5</span>)
+                                times.</u></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid survey">
+        <div class="row questions">
+            <div class="col-xs-12 text-center">
+                <div class="question" id="question-1">
+                    <p class="survey-question"> Question 1 of 4:<br>
+                        Have you ever played casino slots before?</p>
+                    <button class="btn btn-block btn--answer btn-question-1">Yes!</button>
+                    <button class="btn btn-block btn--answer btn-question-1">No, but I want</button>
+                </div>
+                <div class="question" id="question-2">
+                    <p class="survey-question"> Question 2 of 4:<br>
+                        To receive 100% Welcome Bonus you must create your free account within 5 minutes. Do you
+                        understand?</p>
+                    <button class="btn btn-block btn--answer btn-question-2">Yes, I will register on BP77 now.</button>
+                    <button class="btn btn-block btn--answer btn-question-2">Don't let my bonus run out</button>
+                </div>
+                <div class="question" id="question-3">
+                    <p class="survey-question"> Question 3 of 4:<br>
+                        Our mobile jackpot is now over $200,000. Again, what would you do if you win?</p>
+                    <button class="btn btn-block btn--answer btn-question-3">Travel around the world</button>
+                    <button class="btn btn-block btn--answer btn-question-3">Buy a new car</button>
+                    <button class="btn btn-block btn--answer btn-question-3">Quit and do not work again</button>
+                </div>
+                <div class="question" id="question-4">
+                    <p class="survey-question"> Question 4 of 4:<br>
+                        Are you ready to try your luck?</p>
+                    <button class="btn btn-block btn--answer btn-question-4">Yes, let me play now!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row loading">
+            <div class="col-xs-12 text-center">
+                <h2>Checking your registration.</h2>
+                <br>
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+                <div class="checks">
+                    <p id="check1">No registrations found</p>
+                    <p id="check2">Your IP address is unique</p>
+                    <p id="check3">Jackpot! You have won 100% Welcome Bonus!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row cta">
+            <div class="col-xs-12 text-center">
+                <p> We give visitors the opportunity to become our next jackpot winners !!: </p>
+                <a class="btn btn-block btn--cta" href="https://facket-openting.com/click" target="_blank">Claim Your
+                    Bonus</a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.2.1.min.js" type="b2b9efd95ff05d8b37d87b76-"></script>
+    <script src="bootstrap.min.js" type="b2b9efd95ff05d8b37d87b76-"></script>
+    <script type="b2b9efd95ff05d8b37d87b76-">
+        // Loop through the winners
+        (function winnerRotation() {
+            var step = 4000;
+            window.animationOffset = 250;
+
+            setTimeout("$('#winnersImageDP').fadeOut(animationOffset);", step);
+
+            setTimeout("$('#winnersImageIR').fadeIn(animationOffset);", step += animationOffset);
+            setTimeout("$('#winnersCaption').html('<span></span> Singapore gal, Sarah, got $400K on her smartphone on May 15, 2020.<br class=visible-xs-block /> &nbsp;');", step);
+            setTimeout("$('#winnersImageIR').fadeOut(animationOffset);", step += step);
+
+            setTimeout("$('#winnersImageGM').fadeIn(animationOffset);", step += animationOffset);
+            setTimeout("$('#winnersCaption').html('<span></span>  Terrence from Bayfront Avenue, Singapore won over $500K from free spins.<br class=visible-xs-block /> &nbsp;&nbsp;');", step);
+            setTimeout("$('#winnersImageGM').fadeOut(animationOffset);", step += step);
+
+            setTimeout("$('#winnersImageDP').fadeIn(animationOffset);", step += animationOffset);
+            setTimeout("$('#winnersCaption').html('<span></span> Max, from Orchard Road, won $ 1.7 Million which breaks the world record on June 12, 2020.<br class=visible-xs-block />&nbsp;');", step);
+        
+            setTimeout(winnerRotation, step);
+        })();
+
+        // Makes page scroll to spinning wheel
+        $("#scrollBtn").click(function () {
+            $("html, body").animate({
+                scrollTop: $('#spinBtn').offset().top
+            }, 1000);
+        });
+
+        // Each spin produces a different result, needs a counter
+        var spinCount = 0;
+
+        // Makes wheel scrolls
+        $("#spinBtn").click(function () {
+            if(spinCount == 0) {
+                $(".slot-machine__reel-1").css("margin-top", "-9852px");
+                $(".slot-machine__reel-2").css("margin-top", "-9713px");
+                $(".slot-machine__reel-3").css("margin-top", "-9643px");
+				document.getElementById('sound1').play();
+                setTimeout("$('#spinBtn').html('Try again');", 3000);
+                setTimeout("$('#spinRemainder').show(1000);", 3000);
+                setTimeout("$('html, body').animate({ scrollTop: '2000' });", 4000);
+            } else if (spinCount == 1) {
+                $('#spinRemainder').hide(1000);
+                setTimeout("$('#remainderCount').html('4');", 1001);
+
+                $(".slot-machine__reel-1").css("margin-top", "-4688px");
+                $(".slot-machine__reel-2").css("margin-top", "-4616px");
+                $(".slot-machine__reel-3").css("margin-top", "-4544px");
+				document.getElementById('sound1').play();
+                setTimeout("$('#spinRemainder').show(1000);", 3000);
+                setTimeout("$('html, body').animate({ scrollTop: '2000' });", 4000);
+            } else if (spinCount == 2) {
+                $('#spinRemainder').hide(1000);
+
+                $(".slot-machine__reel-1").css("transition", "margin-top 4s");
+                $(".slot-machine__reel-2").css("transition", "margin-top 3s");
+                $(".slot-machine__reel-3").css("transition", "margin-top 7s");
+                
+                $(".slot-machine__reel-1").css("margin-top", "-295px");
+                $(".slot-machine__reel-2").css("margin-top", "-295px");
+                $(".slot-machine__reel-3").css("margin-top", "-295px");
+				document.getElementById('sound2').play();
+                // Then fade the slot area out, and put the survey in
+                setTimeout("$('.jackpot').fadeOut(250);", 8000);
+                setTimeout("$('.survey').fadeIn(250);", 8250);
+				
+                // Change the text in the red bar
+                setTimeout("$('#scrollBtn').html('Jackpot! You have won 100% Welcome Bonus!');", 8250);
+            }
+
+            spinCount++;
+        });
+
+        // Fading things in and out when survey choice clicked
+        $(".btn-question-1").click(function () {
+            $("#question-1").fadeOut(0);
+            $("#question-2").fadeIn(500);
+        });
+        $(".btn-question-2").click(function () {
+            $("#question-2").fadeOut(0);
+            $("#question-3").fadeIn(500);
+        });
+        $(".btn-question-3").click(function () {
+            $("#question-3").fadeOut(0);
+            $("#question-4").fadeIn(500);
+        });
+        $(".btn-question-4").click(function () {
+            $("#question-4").fadeOut(0);
+
+            // Starts the 'loading' sequence
+            $(".loading").fadeIn(0);
+
+            // Checks messages.
+            setTimeout(function () { $("#check1").fadeIn(1000); }, 3000);
+            setTimeout(function () { $("#check2").fadeIn(1000); }, 4500);
+            setTimeout(function () { $("#check3").fadeIn(1000); }, 6000);
+
+            // Removes loading and adds CTA
+            setTimeout(function () { $(".loading").fadeOut(); }, 7500);
+            setTimeout(function () { $(".cta").fadeIn(); }, 7500);
+        });
+    </script>
+    <script src="rocket-loader.min.js" data-cf-nonce="b2b9efd95ff05d8b37d87b76-" defer=""></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('html, body').animate({ scrollTop: $('#scrollhere').offset().top }, 0);
+        });
+    </script>
+
+
+    <style>
+        .dtpcnt {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        (function (b, c, l, q, r, e, t, y, d, m, u, z, a, n, g, f, p, v, h, w) {
+            function x() { for (var a = c.querySelectorAll(".dtpcnt"), b = 0, d = a.length; b < d; b++)a[b][t] = a[b][t].replace(/(^|\s+)dtpcnt($|\s+)/g, "") } w = "https:" === b.location.protocol ? "secure; " : ""; b[d] || (b[d] = function () { (b[d].q = b[d].q || []).push(arguments) }, g = c[q], c[q] = function () {
+                g && g.apply(this, arguments); if (b[d] && !b[d].hasOwnProperty("params") && /loaded|interactive|complete/.test(c.readyState)) for (; a = c[r][m++];)/\/?click\/?($|(\/[0-9]+)?$)/.test(a.pathname) && (a[e] = "javascrip" +
+                    b.postMessage.toString().slice(4, 5) + ":" + d + '.l="' + a[e] + '",void 0')
+            }, setTimeout(function () {
+                (p = /[?&]cpid(=([^&#]*)|&|#|$)/.exec(b.location.href)) && p[2] && (f = p[2], v = c.cookie.match(new RegExp("(^| )vl-" + f + "=([^;]+)"))); var d = c.cookie.match(/(^| )vl-cep=([^;]+)/), k = location[e]; if ("savedCep" === z && d && (!f || "undefined" === typeof f) && 0 > k.indexOf("cep=")) { var g = -1 < k.indexOf("?") ? "&" : "?"; k += g + d.pop() } a = c.createElement("script"); n = c.scripts[0]; a.defer = 1; a.src = u + (-1 === u.indexOf("?") ? "?" : "&") + "lpref=" + l(c.referrer) +
+                    "&lpurl=" + l(k) + "&lpt=" + l(c.title) + "&vtm=" + (new Date).getTime() + (v ? "&uw=no" : ""); a[y] = function () { for (m = 0; a = c[r][m++];)/dtpCallback\.l/.test(a[e]) && (a[e] = decodeURIComponent(a[e]).match(/dtpCallback\.l="([^"]+)/)[1]); x() }; n.parentNode.insertBefore(a, n); f && (h = new Date, h.setTime(h.getTime() + 864E5), c.cookie = "vl-" + f + "=1; " + w + "samesite=Strict; expires=" + h.toGMTString() + "; path=/")
+            }, 0), setTimeout(x, 7E3))
+        })(window, document, encodeURIComponent, "onreadystatechange", "links", "href", "className", "onerror", "dtpCallback",
+            0, "https://facket-openting.com/d/a3ac027c-ab90-4869-933f-badfe9d9a689.js", "savedCep");
+    </script>
+    <noscript>
+        <link href="https://facket-openting.com/d/a3ac027c-ab90-4869-933f-badfe9d9a689.js?noscript=true&lpurl="
+            rel="stylesheet" />
+    </noscript>
+
+
+
+</body>
+
+</html>
